@@ -1,0 +1,1 @@
+console.log("Ingresa una cadena de texto: ")
