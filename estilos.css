@@ -1,0 +1,315 @@
+@font-face {
+    font-family: willow;
+    src: url(Willow.otf);
+}
+
+@font-face {
+    font-family: honeymoon;
+    src: url(Honeymoon.otf);
+
+}
+
+@font-face {
+    font-family: writeSong;
+    src: url(writeSong.ttf);
+}
+
+@font-face {
+    font-family: hello;
+    src: url(hello.otf);
+}
+
+@font-face {
+    font-family: kasper;
+    src: url(kasper.otf);
+}
+
+@font-face {
+    font-family: Joke;
+    src: url(Joke.ttf);
+}
+
+@font-face {
+    font-family: cream;
+    src: url(cream.otf);
+}
+
+@font-face {
+    font-family: dream;
+    src: url(Dream.otf);
+}
+
+.wd-50 {
+    width: 70% !important;
+    border-radius: 50% !important;
+}
+
+.wd-70{
+    width: 55% !important;
+}
+
+.title-principal{
+    font-family: willow;
+    font-size: 4rem;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.principal{
+    box-shadow: 0px 0px 4px 1px #000;
+    border: 2px solid #333;
+    border-color: rgb(218, 165, 32);
+}
+
+.subtitulos {
+    font-family: kasper;
+    font-size: 3rem;
+    color: #7D1E1E;
+    font-weight: bold;
+}
+
+.subtitulos-mini{
+    font-family: hello;
+    font-size: 3rem;
+    color: #7D1E1E;
+    font-weight: bold;
+}
+
+.texto{
+    font-family: writeSong;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.width-card{
+    width: 80% !important;
+    border: 5px solid goldenrod !important;
+    background-color: #A34678 !important;
+    border-radius: 20px !important;
+}
+
+.card-inicio{
+    width: 75% !important;
+    border: 5px solid goldenrod !important;
+    background-color: #A34678 !important;
+    border-radius: 20px !important;
+}
+
+.texto-card{
+    font-family: writeSong !important;
+    font-size: 1.7rem !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.footer{
+    font-family: writeSong !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+}
+
+.subtext{
+    font-family: writeSong !important;
+    font-size: 1.2rem !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.titulo-card{
+    font-family: dream !important;
+    color: white !important;
+    font-size: 2.4rem !important;
+}
+
+.subtitulo-card{
+    font-family: hello;
+    font-size: 4rem;
+    color: white !important;
+    font-weight: bold
+}
+
+.titulo-padres {
+    color: white !important;
+    font-family: dream !important;
+    font-size: 1.8rem !important;
+    margin-top: 25px !important;
+    font-weight: bold !important;
+}
+
+.padres{
+    color: white !important;
+    font-family: dream !important;
+    font-size: 1.3rem !important;
+   
+}
+
+#cuenta {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    font-family: 'Arial', sans-serif;
+}
+
+.simply-section{
+    border: 5px solid goldenrod !important;
+    background-color: #A34678 !important;
+    border-radius: 20px !important;
+    font-family: honeymoon !important;
+    color: white;
+    font-size: 2rem;
+}
+
+.simply-countdown > .simply-section {
+    width: 150px;
+    height: 150px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    float: left;
+    margin: 15px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+    display: block;
+    text-align: center;
+}
+
+.grid{        
+	column-count: 4;
+	/*column-gap: 16px;*/
+    max-width: 1200px;
+}
+
+/*.grid-item {
+    /*width: 250px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+	box-shadow: 0px 0px 4px 1px #000;
+}*/
+
+/* clearfix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+    width: 50%;
+}
+
+.grid-item {
+    width: auto;
+    /*float: left;
+    /*background-color: #fff;*/
+    /*border-radius: 10px;*/
+	box-shadow: 1px 0px 4px 5px goldenrod;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.gutter-sizer {
+  width: 4%;
+}
+
+.img-border {
+    border-radius: 7px;
+}
+
+@keyframes reveal {
+	from { transform: scale(0.001); }
+	to { transform: scale(1); }
+  }
+
+@keyframes slide {
+	to { transform: translateX(1.5em) }
+}
+
+@media(min-width: 200px){
+    .grid{
+        column-count: 2;
+        max-width: 1200px;
+    }
+    .wd-50 {
+        width: 100% !important;
+        border-radius: 50% !important;
+    }
+    .wd-70{
+        width: 75% !important;
+    }
+} 
+
+@media(min-width: 500px){
+    .grid{
+        column-count: 3;
+        max-width: 1200px;
+    }
+}
+
+@media(min-width: 750px){
+    .grid{
+        column-count: 3;
+        max-width: 1200px;
+    }
+} 
+
+@media(min-width:870px) {
+    .grid{
+        column-count: 4;
+        max-width: 1200px;
+    }
+}
+@media(min-width:1150px){
+    .grid{
+        column-count: 5;
+        max-width: 1200px;
+    }
+
+    .width-card{
+        width: 70% !important;
+        border: 5px solid goldenrod !important;
+        background-color: #A34678 !important;
+        border-radius: 20px !important;;
+    }
+
+    .wd-50 {
+        width: 70% !important;
+        border-radius: 50% !important;
+    }
+    .wd-70{
+        width: 55% !important;
+        margin-top: 1.5rem !important;
+    }
+}
+
+.btn-color{
+    background-color: goldenrod !important;
+    border: 1px solid #F2E5D9 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    text-transform: uppercase !important;
+    cursor: pointer;
+}
