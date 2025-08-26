@@ -55,9 +55,9 @@
     font-weight: bold;
 }
 
-.subtitulos-mini{
-    font-family: hello;
-    font-size: 3rem;
+.text-prioridad{
+    font-family: Joke;
+    font-size: 1.5rem;
     color: #7D1E1E;
     font-weight: bold;
 }
@@ -275,6 +275,16 @@
 
 .btn-color{
     background-color: goldenrod !important;
+    border: 1px solid #F2E5D9 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    text-transform: uppercase !important;
+    cursor: pointer;
+}
+
+
+.btn-agregar{
+    background-color: rgb(76, 207, 43) !important;
     border: 1px solid #F2E5D9 !important;
     color: white !important;
     border-radius: 10px !important;
