@@ -48,23 +48,10 @@
     width: 55% !important;
 }
 
-.title-principal{
-    font-family: willow;
-    font-size: 4rem;
-    color: goldenrod;
-    font-weight: bold;
-}
-
-.principal{
-    box-shadow: 0px 0px 4px 1px #000;
-    border: 2px solid #333;
-    border-color: rgb(218, 165, 32);
-}
-
 .subtitulos {
     font-family: kasper;
     font-size: 3rem;
-    color: #7D1E1E;
+    color: #111f6e;
     font-weight: bold;
 }
 
@@ -75,50 +62,32 @@
     font-weight: bold;
 }
 
-.texto{
-    font-family: writeSong;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 .width-card{
     width: 80% !important;
-    border: 5px solid goldenrod !important;
-    background-color: #A34678 !important;
+    border: 5px solid black !important;
+    background-color: #ffffff !important;
     border-radius: 20px !important;
-}
-
-.card-inicio{
-    width: 75% !important;
-    border: 5px solid goldenrod !important;
-    background-color: #A34678 !important;
-    border-radius: 20px !important;
-}
-
-.texto-card{
-    font-family: writeSong !important;
-    font-size: 1.7rem !important;
-    color: white !important;
-    font-weight: bold !important;
 }
 
 .footer{
     font-family: writeSong !important;
     font-size: 1rem !important;
     font-weight: bold !important;
-}
-
-.subtext{
-    font-family: writeSong !important;
-    font-size: 1.2rem !important;
-    color: white !important;
-    font-weight: bold !important;
+    margin-top: 50px;
 }
 
 .titulo-card{
     font-family: dream !important;
-    color: white !important;
+    color: black !important;
     font-size: 2.4rem !important;
+}
+
+.lista-tareas{
+    border: 5px solid black !important;
+    border-radius: 20px !important;
+    margin-right: 15px;
+    width: 300px !important;
+    height: 200px !important;
 }
 
 .subtitulo-card{
@@ -290,8 +259,8 @@
 
     .width-card{
         width: 70% !important;
-        border: 5px solid goldenrod !important;
-        background-color: #A34678 !important;
+        border: 5px solid black !important;
+        background-color: #ffffff !important;
         border-radius: 20px !important;;
     }
 
