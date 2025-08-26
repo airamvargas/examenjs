@@ -36,7 +36,7 @@ $(document).on('submit', '#add_tarea', function(e){
     
     card_tareas = `<div id="${count_tareas}" class="card lista-tareas pb-3 my-1">
         <div class="card-body">
-            <h5 class="card-title text-uppercase">${tarea}</h5>
+            <h5 class="card-title text-uppercase"><input type="checkbox" id="check_${count_tareas}" class="check_realizadas" value="1"> ${tarea}</h5>
             <div class="row">
                 <div class="col-6 text-left tituto-card">
                     <h6>${prioridad}</h6>
@@ -46,7 +46,7 @@ $(document).on('submit', '#add_tarea', function(e){
                 </div>
             </div>
             <div class="row justify-content-end">
-                <button data-tarea="${count_tareas}" class="btn btn-danger update solid pd-x-20 btn-circle btn-sm mr-sm-3 mt-sm-2" type="button">Editar <i class="fa fa-trash" aria-hidden="true"></i></button>    
+                <button data-tarea="${count_tareas}" class="btn btn-warning update solid pd-x-20 btn-circle btn-sm mr-sm-3 mt-sm-2" type="button">Editar <i class="fa fa-trash" aria-hidden="true"></i></button>    
                 <button data-tarea="${count_tareas}" class="btn btn-danger delete solid pd-x-20 btn-circle btn-sm mr-sm-3 mt-sm-2" type="button">Eliminar <i class="fa fa-trash" aria-hidden="true"></i></button>
             </div>
         </div>
@@ -71,4 +71,11 @@ $(document).on('click', '.update', function(){
     title = document.getElementById(div_tarea).querySelector('.card-title');
     title.textContent;
 });
+
+$(document).on('click', '.check_realizadas', function(){
+    realiz = realiz + 1;
+    relizadas = $("#t_realiz")
+    relizadas.children().remove()
+    relizadas.append(`<span class="contadores">${realiz}</span>`);
+})
 
