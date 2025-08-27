@@ -35,7 +35,7 @@ $(document).on('submit', '#add_tarea', function(e){
     
     card_tareas = `<div id="${count_tareas}" class="card lista-tareas pb-3 my-1">
         <div class="card-body">
-            <h5 class="card-title text-uppercase"><input type="checkbox" id="check_${count_tareas}" class="check_realizadas" value="1"> ${tarea}</h5>
+            <h5 class="card-title text-uppercase"><input type="checkbox" id="check_${count_tareas}" class="check_realizadas" value="1"> <span class="titulo-card"> ${tarea}</span></h5>
             <div class="row">
                 <div class="col-6 text-left tituto-card">
                     <h6 class="text-prioridad">${prioridad}</h6>
@@ -67,7 +67,7 @@ $(document).on('click', '.delete', function(){
 $(document).on('click', '.update', function(){
     id_tarea = $(this).data('tarea');
     div_tarea = document.getElementById(id_tarea)
-    let title = document.getElementById(id_tarea).querySelector('.card-title');
+    let title = document.getElementById(id_tarea).querySelector('.titulo-card');
     let prioridad = document.getElementById(id_tarea).querySelector('.text-prioridad');
     let descrip = document.getElementById(id_tarea).querySelector('.text-descrip');
     switch(prioridad.textContent){
@@ -83,6 +83,7 @@ $(document).on('click', '.update', function(){
         default:
             id_prio = 0
     }
+    console.log(title.textContent)
     $("#upd_tarea").val(title.textContent);
     $("#upd_prioridad").val(id_prio);
     $("#upd_descripcion").val(descrip.textContent);
@@ -107,14 +108,14 @@ $(document).on('click', '.check_realizadas', function(){
     
 });
 
-$(document).on('submit', '#upd_tarea', function(e){
+$(document).on('submit', '#update_tarea', function(e){
     e.preventDefault();
     count_tareas = count_tareas + 1;
     descrip = $("#upd_descripcion").val()
     tarea = $("#upd_tarea").val();
     id_prior = parseFloat($("#upd_prioridad").val());
     id_tarea = $("#id_upd").val();
-    form = document.getElementById('upd_tarea');
+    form = document.getElementById('update_tarea');
 
     switch(id_prior){
         case 1: 
@@ -130,7 +131,7 @@ $(document).on('submit', '#upd_tarea', function(e){
             prioridad = "SIN PRIORIDAD"
     }
 
-    let title = document.getElementById(id_tarea).querySelector('.card-title');
+    let title = document.getElementById(id_tarea).querySelector('.titulo-card');
     let prior = document.getElementById(id_tarea).querySelector('.text-prioridad');
     let descripcion = document.getElementById(id_tarea).querySelector('.text-descrip');
 

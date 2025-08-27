@@ -7,21 +7,6 @@ lon_2 = texto2.length;
 let contador1 = {};
 let contador2 = {};
 
-function contarDiferencias(str1, str2) {
-    let diferencias = 0;
-
-    for (let i = 0; i < str1.length; i++) {
-        if (str1[i] !== str2[i]) {
-            diferencias++;
-        }
-    }
-
-    return diferencias;
-}
-
-alert("Caracteres diferentes: " + contarDiferencias(texto, texto2))
-
-
 for (let char1 of texto) {
     char1 = char1.toLowerCase(); // opcional, para no distinguir mayúsculas
     contador1[char1] = (contador1[char1] || 0) + 1;
@@ -43,5 +28,5 @@ for (let letra2 in contador2) {
 }
 
 
-//alert("Recuento de caracteres en el texto " + texto +", con una longitud total de " + lon_1 + ":\n" + result1);
-//alert("Recuento de caracteres en el texto " + texto2 +", con una longitud total de " + lon_2 + ":\n" + result2);
+alert("Recuento de caracteres en el texto " + texto +", con una longitud total de " + lon_1 + ":\n" + result1);
+alert("Recuento de caracteres en el texto " + texto2 +", con una longitud total de " + lon_2 + ":\n" + result2);
